@@ -15,6 +15,7 @@ import SiteWrapper from "../SiteWrapper.react";
 
 function Home() {
   return (
+    <div class="wrapper">
       <Page.Content>
         <Grid.Row cards={true}>
           <Grid.Col lg={12}>
@@ -37,7 +38,7 @@ function Home() {
           </Grid.Col>
         </Grid.Row>
       </Page.Content>
-    
+    </div>
   );
 }
 

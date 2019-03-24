@@ -12,7 +12,7 @@ import {
 
 import SiteWrapper from "../SiteWrapper.react";
 
-export class QuestionPage extends Component {
+export class FilmPrimer extends Component {
   constructor(props) {
     super(props)
     
@@ -24,16 +24,6 @@ export class QuestionPage extends Component {
     this.backClicked = this.backClicked.bind(this);
   }  
 
-  componentWillMount(){
-    
-    if(this.props.location.state){
-      this.goToFinal = true;
-      this.questionPage = appText.en.questionAfterMoviePage;
-    }else{
-      this.questionPage = appText.en.questionPage
-    }
-    //this.recievedMessage = this.props.location.state.message;
-  }
   backClicked(){
     this.setState(
       {
@@ -42,32 +32,29 @@ export class QuestionPage extends Component {
   }
   recordAnswer(index){
 
-    if(this.questionPage[this.state.questionPageNumber+1]){
+    if(appText.en.questionPage[this.state.questionPageNumber+1]){
       this.setState(
         {
           questionPageNumber: this.state.questionPageNumber+1,
           answers: Object.assign({},this.state.answers,{[this.state.questionPageNumber]: index})
         })
       }else{
-        if(!this.goToFinal){
-          this.props.history.push('/film-primer-page', {state: {answers: Object.assign({},this.state.answers,{[this.state.questionPageNumber]: index})}})
-        }else{
-          this.props.history.push('/final-page', {state: {answers: Object.assign({},this.state.answers,{[this.state.questionPageNumber]: index})}})
-        }
+        console.log(Object.assign({},this.state.answers,{[this.state.questionPageNumber]: index}))
+        this.props.history.push('/quessdtion-page', {state: {answers: this.state.answers}})
     }
   }
   render(){
     
     return (
-      <div class="wrapper">
+
         <Page.Content>
           <Grid.Row cards={true}>
             <Grid.Col lg={12}>
                   <h1>
-                    {this.questionPage[this.state.questionPageNumber].heading}
+                    {appText.en.questionPage[this.state.questionPageNumber].heading}
                   </h1>
                   <Button.List>
-                  {this.questionPage[this.state.questionPageNumber].answer.map((answer,i)=>(
+                  {appText.en.questionPage[this.state.questionPageNumber].answer.map((answer,i)=>(
                     <Button className="questionButton" block color="primary" RootComponent="a" key={i} onClick={()=>{this.recordAnswer(i)}}>
                       {answer}
                     </Button>
@@ -81,11 +68,10 @@ export class QuestionPage extends Component {
             </Grid.Col>
           </Grid.Row>
         </Page.Content>
-      </div>
     );
   }
 }
 
-export default QuestionPage;
+export default FilmPrimer;
 
 

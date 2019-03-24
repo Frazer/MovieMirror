@@ -17,6 +17,9 @@ import {
 
 import HomePage from "./MMPages/HomePage.react";
 import QuestionPage from "./MMPages/QuestionPage.react";
+import FilmPrimerPage from "./MMPages/FilmPrimerPage.react";
+import WatchFilmPage from "./MMPages/WatchFilmPage.react";
+import FinalPage from "./MMPages/FinalPage.react";
 import FormElementsPage from "./FormElementsPage.react";
 import PricingCardsPage from "./interface/PricingCardsPage.react";
 import CardsDesignPage from "./interface/CardsDesignPage.react";
@@ -39,6 +42,9 @@ function App(props: Props): React.Node {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/question-page" component={QuestionPage} />
+          <Route exact path="/film-primer-page" component={FilmPrimerPage} />
+          <Route exact path="/watch-film-page" component={WatchFilmPage} />
+          <Route exact path="/final-page" component={FinalPage} />
           <Route exact path="/forgot-password" component={ForgotPasswordPage} />
           <Route exact path="/400" component={Error400} />
           <Route exact path="/401" component={Error401} />
