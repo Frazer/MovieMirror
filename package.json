@@ -15,11 +15,14 @@
     "react-syntax-highlighter": "^10.2.1",
     "tabler-react": "^1.29.0"
   },
+  "homepage": "http://Frazer/.github.io/MovieMirror",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
