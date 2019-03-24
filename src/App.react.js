@@ -15,7 +15,8 @@ import {
   ProfilePage,
 } from "./pages";
 
-import HomePage from "./HomePage.react";
+import HomePage from "./MMPages/HomePage.react";
+import QuestionPage from "./MMPages/QuestionPage.react";
 import FormElementsPage from "./FormElementsPage.react";
 import PricingCardsPage from "./interface/PricingCardsPage.react";
 import CardsDesignPage from "./interface/CardsDesignPage.react";
@@ -37,6 +38,8 @@ function App(props: Props): React.Node {
       <Router>
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/question-page" component={QuestionPage} />
+          <Route exact path="/forgot-password" component={ForgotPasswordPage} />
           <Route exact path="/400" component={Error400} />
           <Route exact path="/401" component={Error401} />
           <Route exact path="/403" component={Error403} />
@@ -49,7 +52,6 @@ function App(props: Props): React.Node {
           <Route exact path="/email" component={Email} />
           <Route exact path="/empty-page" component={Empty} />
           <Route exact path="/form-elements" component={FormElementsPage} />
-          <Route exact path="/forgot-password" component={ForgotPasswordPage} />
           <Route exact path="/gallery" component={GalleryPage} />
           <Route exact path="/icons" component={IconPage} />
           <Route exact path="/login" component={LoginPage} />

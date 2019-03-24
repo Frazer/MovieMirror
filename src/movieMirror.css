@@ -2,3 +2,14 @@
   background-image: linear-gradient(to right, red , yellow);
   background-repeat: no-repeat
 }
+
+.welcome{
+  height: 100%;
+}
+
+.questionButton{
+  font-size: 30px;
+  color: white !important;
+  background-image: linear-gradient(to right, #3358f2 , #6d87f2);
+  
+}
