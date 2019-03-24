@@ -15,7 +15,7 @@
     "react-syntax-highlighter": "^10.2.1",
     "tabler-react": "^1.29.0"
   },
-  "homepage": "http://Frazer/.github.io/MovieMirror",
+  "homepage": "http://Frazer/github.io/MovieMirror",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
