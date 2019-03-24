@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/github.io/MovieMirror/precache-manifest.d7cc5ee84a14ccdde8b9b3a7cc3606be.js"
+  "/MovieMirror/precache-manifest.92c8c087f9507e2b46ad2b84d7d29e9a.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/github.io/MovieMirror/index.html", {
+workbox.routing.registerNavigationRoute("/MovieMirror/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
