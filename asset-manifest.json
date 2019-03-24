@@ -1,16 +1,16 @@
 {
-  "main.css": "/MovieMirror/static/css/main.c5429559.chunk.css",
-  "main.js": "/MovieMirror/static/js/main.9c4cc1e0.chunk.js",
-  "main.js.map": "/MovieMirror/static/js/main.9c4cc1e0.chunk.js.map",
+  "main.css": "/MovieMirror/static/css/main.e5130788.chunk.css",
+  "main.js": "/MovieMirror/static/js/main.3db2a6d1.chunk.js",
+  "main.js.map": "/MovieMirror/static/js/main.3db2a6d1.chunk.js.map",
   "runtime~main.js": "/MovieMirror/static/js/runtime~main.889b825e.js",
   "runtime~main.js.map": "/MovieMirror/static/js/runtime~main.889b825e.js.map",
   "static/css/2.51400570.chunk.css": "/MovieMirror/static/css/2.51400570.chunk.css",
   "static/js/2.a6a0356f.chunk.js": "/MovieMirror/static/js/2.a6a0356f.chunk.js",
   "static/js/2.a6a0356f.chunk.js.map": "/MovieMirror/static/js/2.a6a0356f.chunk.js.map",
   "index.html": "/MovieMirror/index.html",
-  "precache-manifest.92c8c087f9507e2b46ad2b84d7d29e9a.js": "/MovieMirror/precache-manifest.92c8c087f9507e2b46ad2b84d7d29e9a.js",
+  "precache-manifest.439070a4ab2a23d69880c01df8a40354.js": "/MovieMirror/precache-manifest.439070a4ab2a23d69880c01df8a40354.js",
   "service-worker.js": "/MovieMirror/service-worker.js",
   "static/css/2.51400570.chunk.css.map": "/MovieMirror/static/css/2.51400570.chunk.css.map",
-  "static/css/main.c5429559.chunk.css.map": "/MovieMirror/static/css/main.c5429559.chunk.css.map",
+  "static/css/main.e5130788.chunk.css.map": "/MovieMirror/static/css/main.e5130788.chunk.css.map",
   "static/media/Tabler.css": "/MovieMirror/static/media/zw.e223cee5.svg"
 }
